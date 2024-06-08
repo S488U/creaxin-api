@@ -1,17 +1,6 @@
 <?php
 
-$servername = "localhost";
-$dbname = "id22173902_creaxin_data_main";
-$username = "id22173902_shah_creaxin";
-$password = "creaxin_Shahabas@12";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include "./connection.php";
 
 function validateToken($token) {
     global $conn;
