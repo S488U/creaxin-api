@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Data API Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-http.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-json.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        pre, code {
+            font-size: 16px !important;
+        }
+        .get-request {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Data API Documentation</h1>
+        <p>Welcome to the Random Data API. This API provides random user data for testing purposes.</p>
+        
+        
+        <h2>Try Your Free API: </h2>
+         <pre><span class="get-request">GET</span><code class="language-http"> https://creaxin.000webhostapp.com/?api_token=abc-def-hij-123</code></pre>
+         <hr>
+        <h2>Get Random Data</h2>
+
+        <p>Returns randomly selected user data from the available dataset.</p>
+        <h3>Example Request:</h3>
+        <pre><span class="get-request">GET</span><code class="language-http"> https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;</code></pre>
+        <h3>Example Response:</h3>
+        <pre  class="language-json">[
+    {
+        "name": "Charlie",
+        "country": "UK",
+        "city": "Manchester",
+        "occupation": "Designer",
+        "timestamp": "2024-05-16 10:19:02"
+    }
+]</pre>
+        
+        <h2>Filter Data by Country</h2>
+        <p>Returns user data filtered by country.</p>
+        <h3>Example Request:</h3>
+        <pre><span class="get-request">GET</span><code class="language-http"> https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;&country=USA</code></pre>
+        <h3>Example Response:</h3>
+        <pre  class="language-json">[
+    {
+        "name": "John",
+        "country": "USA",
+        "city": "New York",
+        "occupation": "Engineer",
+        "timestamp": "2024-05-16 10:23:33"
+    },
+    {
+        "name": "Alice",
+        "country": "USA",
+        "city": "Los Angeles",
+        "occupation": "Teacher",
+        "timestamp": "2024-05-16 10:23:33"
+    }
+]</pre>
+
+        <h2>Filter Data by City</h2>
+        <p>Returns user data filtered by city within a specific country.</p>
+        <h3>Example Request:</h3>
+        <pre><span class="get-request">GET</span><code class="language-http"> https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;&country=USA&city=New%20York</code></pre>
+        <h3>Example Response:</h3>
+        <pre  class="language-json">[
+    {
+        "name": "John",
+        "country": "USA",
+        "city": "New York",
+        "occupation": "Engineer",
+        "timestamp": "2024-05-16 10:23:33"
+    },
+    {
+        "name": "Alice",
+        "country": "USA",
+        "city": "New York",
+        "occupation": "Teacher",
+        "timestamp": "2024-05-16 10:23:33"
+    }
+]</pre>
+
+        <h2>Filter Data by Count, Country, and City</h2>
+        <p>Returns user data filtered by count, country, and city.</p>
+        <h3>Example Request:</h3>
+        <pre><span class="get-request">GET</span><code class="language-http"> https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;&count=2&country=UK&city=Manchester</code></pre>
+        <h3>Example Response:</h3>
+        <pre  class="language-json">[
+    {
+        "name": "Charlie",
+        "country": "UK",
+        "city": "Manchester",
+        "occupation": "Designer",
+        "timestamp": "2024-05-16 10:19:02"
+    },
+    {
+        "name": "Sarah",
+        "country": "UK",
+        "city": "Manchester",
+        "occupation": "Doctor",
+        "timestamp": "2024-05-16 10:19:02"
+    }
+]</pre>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+</body>
+</html>
