@@ -4,14 +4,18 @@
 **Welcome to the Random Data API. This API provides random user data for testing purposes.**
 
 ## Try Your Free API:
-`GET https://creaxin.000webhostapp.com/?api_token=abc-def-hij-123`
+```
+GET https://creaxin.000webhostapp.com/?api_token=abc-def-hij-123
+```
 
 Get Random Data
 Returns randomly selected user data from the available dataset.
 
 **Example Request:**
 
-`GET https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;`
+```
+GET https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;
+```
 
 **Example Response:**
 ```
@@ -30,7 +34,9 @@ Returns user data filtered by country.
 
 **Example Request:**
 
-`GET https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;&country=USA`
+```
+GET https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;&country=USA
+```
 
 **Example Response:**
 
@@ -58,7 +64,9 @@ Returns user data filtered by city within a specific country.
 
 **Example Request:**
 
-`GET https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;&country=USA&city=New%20York`
+```
+GET https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;&country=USA&city=New%20York
+```
 
 **Example Response:**
 ```
@@ -86,7 +94,9 @@ Returns user data filtered by count, country, and city.
 
 **Example Request:**
 
-`GET https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;&count=2&country=UK&city=Manchester`
+```
+GET https://creaxin.000webhostapp.com/?api_token=&lt;your-token&gt;&count=2&country=UK&city=Manchester
+```
 
 **Example Response:**
 ```
@@ -111,5 +121,7 @@ Returns user data filtered by count, country, and city.
 
 
 
-` www.duploader.tech `
+```
+www.duploader.tech .
+```
 
